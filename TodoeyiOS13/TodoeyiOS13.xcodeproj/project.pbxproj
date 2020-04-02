@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A74154582431CC6F0026F66A /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A74154562431CC6F0026F66A /* DataModel.xcdatamodeld */; };
+		A75407A02434654B0071C4D4 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754079F2434654B0071C4D4 /* CategoryTableViewController.swift */; };
 		A7B634ED242F34B20077A684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B634EC242F34B20077A684 /* AppDelegate.swift */; };
 		A7B634EF242F34B20077A684 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B634EE242F34B20077A684 /* SceneDelegate.swift */; };
 		A7B634F4242F34B20077A684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B634F2242F34B20077A684 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		A74154572431CC6F0026F66A /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		A754079F2434654B0071C4D4 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		A7B634E9242F34B20077A684 /* TodoeyiOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoeyiOS13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B634EC242F34B20077A684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7B634EE242F34B20077A684 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 		A74953DA24312C5700DCE909 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A754079F2434654B0071C4D4 /* CategoryTableViewController.swift */,
 				A7B6350E242F35FF0077A684 /* TodoListViewController.swift */,
 			);
 			path = Controller;
@@ -229,6 +232,7 @@
 			files = (
 				A74154582431CC6F0026F66A /* DataModel.xcdatamodeld in Sources */,
 				A7B6350F242F35FF0077A684 /* TodoListViewController.swift in Sources */,
+				A75407A02434654B0071C4D4 /* CategoryTableViewController.swift in Sources */,
 				A7B634ED242F34B20077A684 /* AppDelegate.swift in Sources */,
 				A7B634EF242F34B20077A684 /* SceneDelegate.swift in Sources */,
 			);
