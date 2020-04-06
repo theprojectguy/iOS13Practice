@@ -11,8 +11,8 @@
 		A75407A02434654B0071C4D4 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754079F2434654B0071C4D4 /* CategoryTableViewController.swift */; };
 		A75820882435C128003F0BCE /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75820872435C128003F0BCE /* Item.swift */; };
 		A758208A2435C12F003F0BCE /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75820892435C12F003F0BCE /* Category.swift */; };
+		A7741AB7243B100900BE3404 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7741AB6243B100900BE3404 /* SceneDelegate.swift */; };
 		A7B634ED242F34B20077A684 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B634EC242F34B20077A684 /* AppDelegate.swift */; };
-		A7B634EF242F34B20077A684 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7B634EE242F34B20077A684 /* SceneDelegate.swift */; };
 		A7B634F4242F34B20077A684 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B634F2242F34B20077A684 /* Main.storyboard */; };
 		A7B634F6242F34B40077A684 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7B634F5242F34B40077A684 /* Assets.xcassets */; };
 		A7B634F9242F34B40077A684 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7B634F7242F34B40077A684 /* LaunchScreen.storyboard */; };
@@ -41,9 +41,9 @@
 		A754079F2434654B0071C4D4 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
 		A75820872435C128003F0BCE /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		A75820892435C12F003F0BCE /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		A7741AB6243B100900BE3404 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A7B634E9242F34B20077A684 /* TodoeyiOS13.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TodoeyiOS13.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7B634EC242F34B20077A684 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A7B634EE242F34B20077A684 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A7B634F3242F34B20077A684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A7B634F5242F34B40077A684 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A7B634F8242F34B40077A684 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -151,7 +151,7 @@
 				A74953DA24312C5700DCE909 /* Controller */,
 				A74953D724312B7C00DCE909 /* Model */,
 				A7B634EC242F34B20077A684 /* AppDelegate.swift */,
-				A7B634EE242F34B20077A684 /* SceneDelegate.swift */,
+				A7741AB6243B100900BE3404 /* SceneDelegate.swift */,
 				A7B634F5242F34B40077A684 /* Assets.xcassets */,
 				A7B634FA242F34B40077A684 /* Info.plist */,
 			);
@@ -336,11 +336,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7B6350F242F35FF0077A684 /* TodoListViewController.swift in Sources */,
+				A7741AB7243B100900BE3404 /* SceneDelegate.swift in Sources */,
 				A75407A02434654B0071C4D4 /* CategoryTableViewController.swift in Sources */,
 				A7B634ED242F34B20077A684 /* AppDelegate.swift in Sources */,
 				A71C35E324385A540085EE43 /* SwipeTableViewController.swift in Sources */,
 				A75820882435C128003F0BCE /* Item.swift in Sources */,
-				A7B634EF242F34B20077A684 /* SceneDelegate.swift in Sources */,
 				A758208A2435C12F003F0BCE /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +505,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NRKB5KQT35;
 				INFOPLIST_FILE = TodoeyiOS13/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -524,6 +525,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = NRKB5KQT35;
 				INFOPLIST_FILE = TodoeyiOS13/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

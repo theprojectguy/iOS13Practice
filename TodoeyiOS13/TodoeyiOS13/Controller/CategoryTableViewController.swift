@@ -21,6 +21,11 @@ class CategoryTableViewController: SwipeTableViewController {
         tableView.separatorStyle = .none
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        guard let navBar = navigationController?.navigationBar else {fatalError("Navigation Controller doesn't exist")}
+        navBar.backgroundColor = UIColor(hexString: "1D9BF6")
+    }
+    
     //MARK: - TableView Datasource Methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categoryArray?.count ?? 1
@@ -28,9 +33,15 @@ class CategoryTableViewController: SwipeTableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
-        cell.textLabel?.text = categoryArray?[indexPath.row].name ?? "No categories added yet"
         
-        cell.backgroundColor = UIColor(hexString: categoryArray?[indexPath.row].color ?? "#ffffff")
+        if let category = categoryArray?[indexPath.row] {
+            cell.textLabel?.text = category.name
+        
+            guard let categoryColour = UIColor(hexString: category.colour!) else {fatalError()}
+        
+            cell.backgroundColor = categoryColour
+            cell.textLabel?.textColor = ContrastColorOf(categoryColour, returnFlat: true)
+        }
         return cell
     }
     
@@ -58,7 +69,7 @@ class CategoryTableViewController: SwipeTableViewController {
             if let textUser = textField.text {
                 let newCategory = Category()
                 newCategory.name = textUser
-                newCategory.color = UIColor.randomFlat().hexValue()
+                newCategory.colour = UIColor.randomFlat().hexValue()
                 self.save(category: newCategory)
                 self.tableView.reloadData()
             }
